@@ -1,10 +1,12 @@
 from multiprocessing import Process
 import time
 
+
 def cpu_heavy():
     total = 0
     for i in range(100_000_000):
         total += i
+
 
 p1 = Process(target=cpu_heavy)
 p2 = Process(target=cpu_heavy)

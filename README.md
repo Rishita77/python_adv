@@ -1,7 +1,7 @@
 # When to use what:
 
 | Work Type              | Best Tool       |
-| ---------------------- | --------------- |
+|------------------------|-----------------|
 | High-scale networking  | Asyncio         |
 | Blocking I/O libraries | Threads         |
 | CPU-heavy tasks        | Multiprocessing |
