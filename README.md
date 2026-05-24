@@ -10,22 +10,28 @@
 
 # Example usage/architecture:
 
+```Text
 Async API server
     ↓
 Thread pool for blocking DB drivers
     ↓
 Process pool for CPU-heavy tasks
+```
 
 
 # Threads
+```
 Thread A ----wait----
 Thread B ----wait----
 (OS switches)
+```
 
 # Async
+```
 Task A --await-->
                 Task B --await-->
                                Task C
+```
 
 One thread.
 Cooperative switching.
